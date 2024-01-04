@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="./lib/aos/dist/aos.css" />
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./lib/bootstrap/dist/bootstrap.min.css">
+    <!-- Owl Carousel 2 -->
+    <link rel="stylesheet" href="./lib/owlcarousel/dist/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/dist/owl.theme.min.css">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <style>
+        .awardee .awardee-item {
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .awardee .awardee-item>img {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+
+        .awardee .awardee-item:hover img {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+        }
+
+        .owl-carousel.awardee-carousel .owl-dots {
+            text-align: right;
+        }
+
+        .owl-carousel.awardee-carousel .owl-dots .owl-dot span {
+            border: 2px solid #E8C341;
+            width: 10px;
+            padding: 2px;
+            background-color: transparent;
+            margin: 1em 5px;
+        }
+
+        .owl-carousel.awardee-carousel .owl-dots .owl-dot.active span {
+            width: 40px;
+            background: linear-gradient(117.08deg, #E8C341 29.98%, #915700 79.27%);
+        }
+
+        /* css untuk post produk by wendy code */
+        .gambar-produk {
+            float: left;
+            width: 40%;
+            margin: 0 25px 0 0
+        }
+
+        .produk-kanan {
+            float: right;
+            width: 55%
+        }
+
+        .gambar-produk img {
+            width: 100%;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px 0 rgb(60 64 67 / 11%)
+        }
+
+        .gambar-produk a:nth-child(n+2) img {
+            width: 35% !important;
+            height: 100px !important;
+            object-fit: cover;
+            float: left;
+            margin-right: 10px
+        }
+
+        .deskripsi-produk {
+            overflow: hidden;
+            width: 100%;
+            padding: 20px 0;
+            border-top: 1px solid #eee
+        }
+
+        .status-produk {
+            margin: 10px 0 20px;
+            font-size: 13px;
+            background: #f4f5f9;
+            display: inline-block;
+            color: #444;
+            padding: 3px 15px;
+            border-radius: 5px
+        }
+
+        .produk-kanan #beli-sekarang {
+            color: #fff;
+            font-weight: 600;
+            padding: 10px 25px;
+            display: inline-block;
+            border-radius: 5px
+        }
+
+        .input-field {
+            position: relative;
+            margin: 15px 0
+        }
+
+        .input-field textarea {
+            font-size: 15px;
+            padding: 15px 0 15px 15px;
+            display: block;
+            width: 94%;
+            border: 1px solid #f4f5f9;
+            border-radius: 7px
+        }
+
+        .input-field textarea:focus {
+            outline: none
+        }
+
+        .input-field textarea:focus {
+            border: 2px solid #f89000 !important
+        }
+
+        .produk-kanan #beli-sekarang {
+            background: #f89000;
+            text-decoration: none
+        }
+
+        .produk-kanan #beli-sekarang:hover,
+        .marketplace a:hover {
+            opacity: .8
+        }
+
+        .harga-produk #harga {
+            color: #f89000;
+            font-weight: 700;
+            font-size: 25px
+        }
+
+        .harga-produk strike {
+            opacity: .5
+        }
+
+        .marketplace {
+            margin: 20px 0 30px;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.6em
+        }
+
+        .marketplace>* {
+            display: block
+        }
+
+        .marketplace>small {
+            width: 100%;
+            margin-bottom: 10px
+        }
+
+        .marketplace>a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin: 0 8px 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 3px
+        }
+
+        .marketplace>a:last-of-type {
+            margin-right: 0
+        }
+
+        .marketplace>a img {
+            width: 20px;
+            height: 20px;
+            display: block
+        }
+
+        @media screen and (max-width:768px) {
+            .produk-kanan {
+                width: 100%;
+                float: none
+            }
+
+            .gambar-produk a:nth-child(n+2) img,
+            .gambar-produk {
+                width: 100%;
+                float: left
+            }
+        }
+
+        /* table produk */
+        table.tr-caption-container {
+            min-width: inherit;
+            width: auto;
+            margin: 0 auto;
+            border: 0;
+            position: relative
+        }
+
+        table.tr-caption-container tr td {
+            background-color: transparent;
+            border: 0;
+            padding: 0
+        }
+
+        table.tr-caption-container tr:nth-child(2n+1) td,
+        table.tr-caption-container tr:nth-child(2n+1) td:first-child {
+            border: 0;
+            background: transparent
+        }
+
+        table.tr-caption-container .tr-caption {
+            display: block;
+            font-size: 12px;
+            font-style: italic;
+            color: #767676;
+            background-color: transparent;
+            border: 0
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0px;
+            border: 1px solid rgba(230, 230, 230, 1);
+            border-radius: 7px;
+            overflow: hidden;
+            font-size: 14px
+        }
+
+        table th {
+            background-color: transparent;
+            padding: 15px 20px;
+            border: 1px solid #ddd;
+            border-left: 0;
+            font-family: Noto Sans;
+            font-size: 13px
+        }
+
+        table th:last-child,
+        table tr td:last-child,
+        table tr:nth-child(2n) td:last-child {
+            border-right: 0
+        }
+
+        table td {
+            padding: 15px 20px;
+            border: 1px solid #ddd;
+            border-left: 0;
+            border-top: 0;
+            vertical-align: middle
+        }
+
+        table tr:nth-child(2n+1) td {
+            background-color: rgba(0, 0, 0, .01)
+        }
+
+        .table {
+            display: block;
+            overflow-y: hidden;
+            overflow-x: auto;
+            border-radius: 3px;
+            scroll-behavior: smooth;
+        }
+
+        /* rating produk */
+        .rating-produk i.icon-star-angka {
+            font-weight: 400;
+            font-size: 12px;
+            margin-left: 5px;
+            vertical-align: 1px
+        }
+
+        .rating-produk {
+            padding: 0;
+            width: 55%;
+            float: left;
+            box-sizing: border-box;
+            margin-top: 10px
+        }
+
+        b.widget-rating {
+            display: block;
+            margin-bottom: 10px
+        }
+
+        i.icon-star,
+        .icon-star {
+            font-weight: 400;
+            font-style: normal;
+            display: inline-block
+        }
+
+        i.icon-star:before,
+        .icon-star:before {
+            content: '';
+            width: 17px;
+            height: 17px;
+            display: inline-block;
+            margin: -2px;
+            transition: all .3s ease;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z' fill='%23ffc53e'/%3E%3C/svg%3E") no-repeat
+        }
+
+        i.icon-star.silver:before,
+        i.icon-star.silver:before {
+            content: '';
+            width: 17px;
+            height: 17px;
+            display: inline-block;
+            margin: -2px;
+            transition: all .3s ease;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z' fill='%23a9acad'/%3E%3C/svg%3E") no-repeat
+        }
+
+        /* css darkmode sesuaikan classnya jika berbeda atau hapus bagian ini */
+        .darkMode table th,
+        .darkMode table td {
+            border-color: rgba(255, 255, 255, .1)
+        }
+
+        .darkMode table {
+            background-color: #1e1e1e;
+            color: #fefefe
+        }
+
+        .darkMode .input-field textarea,
+        .darkMode .status-produk {
+            border-color: rgba(255, 255, 255, .1);
+            background: #2d2d30;
+            color: #fefefe
+        }
+    </style>
+    <script>
+        $('.awardee-carousel').owlCarousel({
+            center: true,
+            items: 2,
+            loop: false,
+            margin: 10,
+            responsive: {
+                300: {
+                    items: 1
+                },
+                500: {
+                    items: 2
+                },
+                800: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                },
+            }
+        });
+        $('.awardee-item-carousel').owlCarousel({
+            items: 2,
+            loop: false,
+            margin: 10,
+            responsive: {
+                300: {
+                    items: 1
+                },
+                500: {
+                    items: 2
+                },
+                800: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+</head>
+
+<body class="bg-dark">
+
+    <header>
+
+    </header>
+    <main>
+
+
+
+        <section class="awardee sec-pad">
+            <div class="container">
+                <div class="owl-carousel awardee-carousel owl-theme">
+                    <div>
+                        <a href="./awardee-item.html" class="awardee-item d-block position-relative">
+                            <img src="./src/images/awardee.png" alt="Awardee">
+                            <div class="p-4 bg-blurr position-absolute bottom-0 right-0 w-100 left-0">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div>
+                                        <h5 class="text-yellow">Name Surname</h5>
+                                        <p class="fs-6 text-white">Mahasiswa th. 2020/2021 - SI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./awardee-item.html" class="awardee-item d-block position-relative">
+                            <img src="./src/images/awardee.png" alt="Awardee">
+                            <div class="p-4 bg-blurr position-absolute bottom-0 right-0 w-100 left-0">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div>
+                                        <h5 class="text-yellow">Name Surname</h5>
+                                        <p class="fs-6 text-white">Mahasiswa th. 2020/2021 - SI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./awardee-item.html" class="awardee-item d-block position-relative">
+                            <img src="./src/images/awardee.png" alt="Awardee">
+                            <div class="p-4 bg-blurr position-absolute bottom-0 right-0 w-100 left-0">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div>
+                                        <h5 class="text-yellow">Name Surname</h5>
+                                        <p class="fs-6 text-white">Mahasiswa th. 2020/2021 - SI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./awardee-item.html" class="awardee-item d-block position-relative">
+                            <img src="./src/images/awardee.png" alt="Awardee">
+                            <div class="p-4 bg-blurr position-absolute bottom-0 right-0 w-100 left-0">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div>
+                                        <h5 class="text-yellow">Name Surname</h5>
+                                        <p class="fs-6 text-white">Mahasiswa th. 2020/2021 - SI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./awardee.html" class="awardee-item d-block position-relative">
+                            <img src="./src/images/awardee-more.png" alt="Awardee">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============= GAMBAR PRODUK ================= -->
+        <div class='gambar-produk'>
+            <a href='https://1.bp.blogspot.com/-u89gx1q6IXY/YMIESySAl7I/AAAAAAAACw0/P6IRBEthPjQXAldPn8ND8EyBM7BWKelwwCNcBGAsYHQ/s552/laptop1.jpg'
+                title='judul produk'><img
+                    src='https://1.bp.blogspot.com/-u89gx1q6IXY/YMIESySAl7I/AAAAAAAACw0/P6IRBEthPjQXAldPn8ND8EyBM7BWKelwwCNcBGAsYHQ/s320/laptop1.jpg'
+                    title='judul produk' /></a>
+
+            <a href='https://1.bp.blogspot.com/-Zb0gqlEfIqA/YMIETCPrEkI/AAAAAAAACw4/kM3dHf2mTEUf7rLbz7WqTcny3wIA4aBFgCNcBGAsYHQ/s960/laptop2.jpg'
+                title='judul produk'><img
+                    src='https://1.bp.blogspot.com/-Zb0gqlEfIqA/YMIETCPrEkI/AAAAAAAACw4/kM3dHf2mTEUf7rLbz7WqTcny3wIA4aBFgCNcBGAsYHQ/s320/laptop2.jpg'
+                    title='judul produk' /></a>
+
+            <a href='https://1.bp.blogspot.com/-rRkTgEviFeI/YMIES3xLqAI/AAAAAAAACww/oe64D2ob0IYBttqo2FCVsMqZpaPUc7fFgCNcBGAsYHQ/s285/laptop3.jpg'
+                title='judul produk'><img
+                    src='https://1.bp.blogspot.com/-rRkTgEviFeI/YMIES3xLqAI/AAAAAAAACww/oe64D2ob0IYBttqo2FCVsMqZpaPUc7fFgCNcBGAsYHQ/s0/laptop3.jpg'
+                    title='judul produk' /></a>
+
+        </div>
+        <!-- ============= GAMBAR PRODUK ================= -->
+        <div class='produk-kanan'>
+            <!-- ============= STATUS PRODUK ================= -->
+            <div class='status-produk'>Promo</div>
+            <!-- ============= STATUS PRODUK ================= -->
+            <!-- ============= HARGA PRODUK ================= -->
+            <div class='harga-produk'>
+                <strike>Rp.4.500.000</strike><br />
+                <span id='harga'>Rp.3.000.000</span>
+            </div>
+            <!-- ============= HARGA PRODUK ================= -->
+            <!-- ============= RATING PRODUK ================= -->
+            <span class='rating-produk'>
+                <b class='widget-rating'>
+                    <i class='icon-star'></i>
+                    <i class='icon-star'></i>
+                    <i class='icon-star'></i>
+                    <i class='icon-star'></i>
+                    <i class='icon-star silver'></i>
+                    <i class='icon-star-angka'>4.0</i></b>
+            </span>
+            <!-- ============= RATING PRODUK ================= -->
+            <!-- ============= CATATAN PEMBELI ================= -->
+            <div class='input-field'>
+                <textarea id='catatan' maxlength='100' placeholder='Catatan'></textarea>
+            </div>
+            <!-- ============= CATATAN PEMBELI ================= -->
+            <a href='javascript:void' class='tombol-bukatutup' id='beli-sekarang' title='Beli Sekarang'>Beli
+                Sekarang</a>
+            <!-- ============= MARKETPLACE ================= -->
+            <div class='marketplace'>
+                <small>atau Belanja melalui '<b>Market Place</b>' favorit anda :</small>
+                <a title='Tokopedia' href='#' target='_blank' rel='noopener'>
+                    <img src='https://cdn.statically.io/favicons/tokopedia.com'></a>
+                <a title='Bukalapak' href='#' target='_blank' rel='noopener'>
+                    <img src='https://cdn.statically.io/favicons/bukalapak.com'></a>
+                <a title='Shopee' href='#' target='_blank' rel='noopener'>
+                    <img src='https://cdn.statically.io/favicons/shopee.co.id'></a>
+                <a title='Lazada' href='#' target='_blank' rel='noopener'>
+                    <img src='https://cdn.statically.io/favicons/lazada.co.id'></a>
+            </div>
+            <!-- ============= MARKETPLACE ================= -->
+        </div>
+        <!-- ============= DESKRIPSI PRODUK ================= -->
+        <div class='deskripsi-produk'>
+            <h3>Deskripsi Produk</h3>
+            <!-- ============= TABLE PRODUK ================= -->
+            <table cellpadding='0' cellspacing='0' style='text-align: left;'>
+                <tbody>
+                    <tr>
+                        <td><b>Stok</b></td>
+                        <td>3889</td>
+                    </tr>
+                    <tr>
+                        <td><b>Merek</b></td>
+                        <td>Tidak Ada Merek</td>
+                    </tr>
+                    <tr>
+                        <td><b>Dikirim Dari</b></td>
+                        <td>Jakarta Barat DKI</td>
+                    </tr>
+                    <tr>
+                        <td><b>Ukuran</b></td>
+                        <td>38 - 42</td>
+                    </tr>
+                    <tr>
+                        <td><b>Warna</b></td>
+                        <td>Hitam, Army</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- ============= TABLE PRODUK ================= -->
+            <!-- tuliskan deskripsi produk kalian di sini-->
+        </div>
+    </main>
+    <footer class="py-5 position-relative" style="background-color: #001E40;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-5">
+                    <h4 class="mb-2">Get in Touch</h4>
+                    <ul data-aos="fade-down" data-aos-duration="1000" class="list-unstyled">
+                        <li><a href="#" class="d-flex py-3 align-items-center gap-3 text-decoration-none text-white">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="iconify" data-icon="fontisto:whatsapp"></span>
+                                </div>
+                                <p class="p-0 m-0">021 1235642 - (Admin)</p>
+                            </a>
+                        </li>
+                        <li><a href="#" class="d-flex py-3 align-items-center gap-3 text-decoration-none text-white">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="iconify" data-icon="teenyicons:phone-solid"></span>
+                                </div>
+                                <p class="p-0 m-0">089671052050 - (AL)</p>
+                            </a>
+                        </li>
+                        <li><a href="#" class="d-flex py-3 align-items-center gap-3 text-decoration-none text-white">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="iconify" data-icon="octicon:mail-16"></span>
+                                </div>
+                                <p class="p-0 m-0">mail@mail.com</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-5 order-first order-md-0">
+                    <div class="h-100 d-flex justify-content-center align-items-center">
+                        <img src="./src/images/logo.png" alt="Logo Footer" style="width: 10em;">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-5 text-end">
+                    <h4 class="mb-2">Lets Meet</h4>
+                    <p data-aos="fade-down" data-aos-duration="1000" style="line-height: 52px;">Jl. Graha Elnusa,
+                        RT.3/RW.3
+                        Cilandak Tim, Kota Jakarta Selatan,
+                        Daerah Khusus Ibukota Jakarta 12560</p>
+                </div>
+                <div class="col-12 pt-5 pb-2">
+                    <p>&copy; Fellowship Program of ESQ Business School 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="./lib/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script src="./lib/bootstrap/dist/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel 2 -->
+    <script src="./lib/owlcarousel/dist/owl.js"></script>
+    <!-- Iconify -->
+    <script src="./lib/iconify/dist/iconify.min.js"></script>
+    <!-- Animate on Scroll -->
+    <script src="./lib/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Internal JS -->
+    <script src="./src/js/carousel.js"></script>
+    <script src="./src/js/script.js"></script>
+
+
+</body>
+
+</html>
+
+96
+28 2
+24 2
+20 2 3 4 5
+36 2
+64 2
+48
+16

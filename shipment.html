@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Layout 4 Kolom</title>
+    <!-- bootstrap 5 -->
+    <link href="lib\bootstrap\dist\bootstrap.min.css" rel="stylesheet">
+    <script src="lib\bootstrap\dist\bootstrap.bundle.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="lib\owlcarousel\dist\owl.carousel.min.css">
+    <link rel="stylesheet" href="lib\owlcarousel\dist\owl.theme.min.css">
+    <!-- js -->
+    <script src="lib\jquery\dist\jquery.min.js"></script>
+    <script src="lib\owlcarousel\dist\owl.js"></script>
+    <script src="lib\owlcarousel\dist\owl.carousel2.thumbs.min.js"></script>
+    <!-- internal css -->
+    <link rel="stylesheet" href="mycss.css">
+    <!-- internal js -->
+    <script src="myjs.js"></script>
+
+
+</head>
+
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar bg-light" aria-label="Ninth navbar example">
+            <div class="container-xl " style="font-family: 'Inter';">
+                <a class="navbar-brand" href="#"><img class="height-55-px" src="src/images/logo_gerai_esq.png"></a>
+                <span class="fs-3 fw-bold ">Gerai ESQ</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarsExample07XL">
+                    <ul class="navbar-nav ms-auto  me-2 mb-2 mb-lg-0 p-4 ">
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link active" aria-current="page" href="#">Catalog</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link " href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item ">
+                            <button class="btn btn-primary body-text-medium-c text-white mt-1 ">Sign Up</button>
+                        </li>
+                    </ul>
+
+                </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="container pt-5 px-lg-5 ">
+
+            <div class="row pt-4">
+                <div class="col-12 col-md-8 ">
+                    <nav class="pb-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb fs-4" style="--bs-breadcrumb-item-padding-x:2rem;">
+                            <li class="breadcrumb-item text-coolgrey">Alamat</li>
+                            <li class="breadcrumb-item active" aria-current="page">Pengiriman</li>
+                            <li class="breadcrumb-item text-coolgrey">Pembayaran</li>
+                        </ol>
+                    </nav>
+                    <div>
+                        <p class="fs-3">Metode Pengiriman</p>
+                        <div class="form-check border ps-5 pt-3 pb-3 mb-0">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label w-100 " for="flexRadioDefault1">
+                                COD || Geratis Ongkir - 3 Hari Kerja
+                            </label>
+                        </div>
+                        <div class="form-check border ps-5 pt-3 pb-3 mb-0">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label w-100 " for="flexRadioDefault2">
+                                JNE || Rp.15.000 - Estimasi Besok
+                            </label>
+                        </div>
+                        <div class="form-check border ps-5 pt-3 pb-3 mb-0">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                                checked>
+                            <label class="form-check-label w-100 " for="flexRadioDefault3">
+                                GoJek || Rp.25.000 - Estimasi Hari Ini
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  col-md-4 mt-3  mb-4">
+
+                    <div class="card w-100 h-100 p-4">
+                        <p class="w-100 px-2 pt-2 fw-bold fs-5">Order</p>
+                        <div class="d-flex justify-content-between px-2 pb-2  ">
+                            <div class="">
+                                <p>Harga</p>
+                                <p>Diskon</p>
+                                <p>Ongkir</p>
+                                <p>Kupon</p>
+                            </div>
+                            <div class="text-end">
+                                <p>Rp.125.000</p>
+                                <p>20%</p>
+                                <p>free</p>
+                                <p>Rp.0</p>
+                            </div>
+                        </div>
+                        <div class="separator-horizontal mx-2"></div>
+                        <div class="d-flex justify-content-between px-2 mt-4">
+                            <div class="">
+                                <p class="fw-bold">Total</p>
+                                <p>Estimasi</p>
+                            </div>
+                            <div class="text-end">
+                                <p class="fw-bold">Rp.100.000</p>
+                                <p>01 Feb, 2023</p>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3 kupon">
+                            <input type="text" class="form-control" placeholder="Kode Kupon" aria-label="Kode Kupon"
+                                aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><iconify-icon
+                                    icon="pepicons-pop:label"></iconify-icon></span>
+                        </div>
+                        <button class="btn btn-primary fs-6">Lanjut Pembayaran</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

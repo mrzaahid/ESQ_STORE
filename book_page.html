@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Page</title>
+    <!-- bootstrap 5 -->
+    <link href="lib\bootstrap\dist\bootstrap.min.css" rel="stylesheet">
+    <script src="lib\bootstrap\dist\bootstrap.bundle.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="lib\owlcarousel\dist\owl.carousel.min.css">
+    <link rel="stylesheet" href="lib\owlcarousel\dist\owl.theme.min.css">
+    <!-- js -->
+    <script src="lib\jquery\dist\jquery.min.js"></script>
+    <script src="lib\owlcarousel\dist\owl.js"></script>
+    <!-- internal css -->
+    <link rel="stylesheet" href="mycss.css">
+    <!-- internal js -->
+    <script src="myjs.js"></script>
+
+</head>
+
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar bg-light" aria-label="Ninth navbar example">
+            <div class="container-xl " style="font-family: 'Inter';">
+                <a class="navbar-brand" href="#"><img class="height-55-px" src="src/images/logo_gerai_esq.png"></a>
+                <span class="fs-3 fw-bold ">Gerai ESQ</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarsExample07XL">
+                    <ul class="navbar-nav ms-auto  me-2 mb-2 mb-lg-0 p-4 ">
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link active" aria-current="page" href="#">Catalog</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link " href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item ">
+                            <button class="btn btn-primary body-text-medium-c text-white mt-1 " data-bs-toggle="modal"
+                                data-bs-target="#LoginModal">Sign Up</button>
+                        </li>
+                    </ul>
+
+                </div>
+        </nav>
+    </header>
+
+    <main class="w-100 mb-5 overflow-hidden">
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <h3>Login Form</h3>
+                                    </div>
+                                    <form accept="" class="shadow p-4">
+                                        <div class="mb-3">
+                                            <label for="username">Email/Username</label>
+                                            <input type="email" class="form-control" name="username" id="username"
+                                                placeholder="Username">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="Password">Password</label>
+                                            <input type="password" class="form-control" name="password" id="Password"
+                                                placeholder="Password">
+                                        </div>
+
+                                        <label class="mb-3">
+                                            <input type="checkbox" name="RememberMe"> Remember Me
+                                        </label>
+
+                                        <a href="#" class="float-end text-decoration-none">Reset Password</a>
+
+                                        <div class="mb-3">
+                                            <button type="submit" class="btn btn-primary">Login</button>
+                                        </div>
+
+                                        <hr>
+                                        <p>Or Login With</p>
+                                        <button class="btn w-100 btn-primary mb-2 " style="background-color: #c24231;"
+                                            type="submit"><iconify-icon icon="fa-brands:google" style="color: white;"
+                                                width="15" height="15"></iconify-icon> Sign in with google</button>
+                                        <button class="btn w-100 btn-primary mb-2" style="background-color: #20335c;"
+                                            type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with
+                                            facebook</button>
+
+
+                                        <hr>
+
+                                        <p class="text-center mb-0">If you have not account <a href="#">Register Now</a>
+                                        </p>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero -->
+        <section class="container-fluid mt-0 mb-5 ">
+            <div class="row">
+                <div class="col-12 col-md-5  p-0">
+                    <div class=" overflow-hidden " style="border-radius: 0% 0% 20% 0% ;">
+                        <img src="src/images/pak_ari_angkattangan_edited.jpg" class="object-fit-cover w-100 " alt="">
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-md-1 "></div>
+                <div class="col-12 col-md-6  pt-5   text-end pe-lg-5 d-flex flex-wrap align-content-center">
+                    <div class="pe-lg-5 ps-5">
+                        <div class="pe-xl-5  ">
+                            <p class="text-color-blue display-1-c">Lorem Ipsum</p>
+                            <p class="heading-3-c" style="text-align: justify;">Lorem Ipsum Is Dolor Sit Ammet Lorem
+                                Lorem Ipsum Is Dolor Sit
+                                Ammet Lorem Lorem Ipsum Is Dolor Sit Ammet Lorem Lorem Ipsum Is Dolor Lorem Ipsum Is
+                                Dolor Sit Ammet Lorem m Ipsum Is Dolor Sit Ammet Lorem Lorem Ipsum Is Dolor Sit Ammet
+                                Lorem Lorem Ipsum Is Dolor Sit Ammet Lorem Lorem Ipsum Is Dolor Lorem Ipsum Is Dolor Sit
+                                Ammet Lorem Sit Ammet Lorem iSit Ammet Lorem ipsum is dolor si </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-lg ">
+            <div class="row h-100 ms-5 me-5  ">
+                <div class="col-md-4 col-12 p-0 position-relative">
+                    <div class="text-color-blue h-100  bottom-0 d-flex flex-wrap align-content-center text-end">
+                        <span class="display-1-kentish lh-08 condensed overflow-visible ">HAMBA CAHAYA</span>
+                    </div>
+                </div>
+                <div class="col-md-5 p-0 col-12 pt-5 pt-md-0"><img class="object-fit-cover " width="180%"
+                        style="margin-left: -45%;" src="src/images/hamba_cahaya.png" alt="">
+                </div>
+                <div class="col-md-3 p-0 col-12 text-end d-flex flex-wrap align-content-center  ">
+                    <span class="text-align-justify">Lorem Ipsum Is Dolor Sit Ammet Lorem Lorem Ipsum Is Dolor Sit Ammet
+                        Lorem Lorem Ipsum Is Dolor
+                        Sit
+                        Ammet Lorem Lorem Sit Ammet Lorem ipsum is dolor si</span>
+                    <div class=""></div>
+                    <div class="w-100 bottom-0 end-0 pt-5   ">
+                        <a href="#" class="btn rounded-5 bottom-0 ps-4 pe-4 pt-0 pb-0 "
+                            style="background-color: #E8C341;">
+
+                            <iconify-icon class="text-white px-2 py-2 " icon="ph:shopping-cart-simple" width="15"
+                                height="15" color=""></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <!-- section popular now -->
+            <div class="container-xl p-0 " style="margin-top: 8rem;">
+                <div class="position-relative ">
+
+                    <div class="position-absolute start-0 rounded-5 mt-2 ms-3 ms-lg-1  "
+                        style="height: 400px;width: 350px; background-color: #3B82F6; z-index: -1;">
+                    </div>
+                    <div class="row my-5 w-100 ">
+                        <div class="col-lg-2 col-md-3 col-sm-5  mt-1 ">
+                            <div class="pt-4 ps-3 ">
+                                <p class="display-1-c pt-4 ps-4 text-white ">Best</p>
+                                <p class="display-1-c pt-1 ps-4  text-white ">Seller</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-7 mt-2 ps-2 ps-md-3 ps-lg-5 pe-0 ">
+                            <div class="owl-carousel popular-carousel owl-theme ps-lg-2 mt-1  ">
+                                <div class=" card p-2 flex-column width-16-rem">
+                                    <div class="card-img-top position-relative m-auto  ">
+                                        <div
+                                            class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                            <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1 ">
+                                                4.8
+                                            </span>
+                                            <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                                style="color: #ffd057;"></iconify-icon>
+                                        </div>
+                                        <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                            <img src="src/images/book_new.jpg" class=" object-fit-cover " alt="..."
+                                                style="margin-top: -6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                        <div class="col-8">
+                                            <p class="heading-3-c m-0 ">BOOK I</p>
+                                            <p class="heading-3-c m-0 ">Rp50.000</p>
+                                            <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000
+                                            </p>
+                                            <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        </div>
+                                        <div class="col-4 position-relative "><a href="#"
+                                                class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                                style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                                    icon="ph:shopping-cart-simple" width="15" height="15"
+                                                    color=""></iconify-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card p-2 flex-column width-16-rem">
+                                    <div class="card-img-top position-relative ">
+                                        <div
+                                            class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                            <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                                4.8
+                                            </span>
+                                            <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                                style="color: #ffd057;"></iconify-icon>
+                                        </div>
+                                        <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                            <img src="src/images/book_new.jpg" class=" object-fit-cover " alt="..."
+                                                style="margin-top: -6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                        <div class="col">
+                                            <p class="heading-3-c m-0 ">BOOK II</p>
+                                            <p class="heading-3-c m-0 ">Rp50.000</p>
+                                            <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000
+                                            </p>
+                                            <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        </div>
+                                        <div class="col-4 position-relative "><a href="#"
+                                                class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                                style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                                    icon="ph:shopping-cart-simple" width="15" height="15"
+                                                    color=""></iconify-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card p-2 flex-column width-16-rem">
+                                    <div class="card-img-top position-relative ">
+                                        <div
+                                            class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                            <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                                4.8
+                                            </span>
+                                            <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                                style="color: #ffd057;"></iconify-icon>
+                                        </div>
+                                        <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                            <img src="src/images/book_new.jpg" class=" object-fit-cover " alt="..."
+                                                style="margin-top: -6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                        <div class="col">
+                                            <p class="heading-3-c m-0 ">BOOK III</p>
+                                            <p class="heading-3-c m-0 ">Rp50.000</p>
+                                            <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000
+                                            </p>
+                                            <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        </div>
+                                        <div class="col-4 position-relative "><a href="#"
+                                                class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                                style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                                    icon="ph:shopping-cart-simple" width="15" height="15"
+                                                    color=""></iconify-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card p-2 flex-column width-16-rem">
+                                    <div class="card-img-top position-relative ">
+                                        <div
+                                            class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                            <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                                4.8
+                                            </span>
+                                            <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                                style="color: #ffd057;"></iconify-icon>
+                                        </div>
+                                        <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                            <img src="src/images/book_new.jpg" class=" object-fit-cover " alt="..."
+                                                style="margin-top: -6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                        <div class="col">
+                                            <p class="heading-3-c m-0 ">BOOK IV</p>
+                                            <p class="heading-3-c m-0 ">Rp50.000</p>
+                                            <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000
+                                            </p>
+                                            <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        </div>
+                                        <div class="col-4 position-relative "><a href="#"
+                                                class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                                style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                                    icon="ph:shopping-cart-simple" width="15" height="15"
+                                                    color=""></iconify-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card p-2 flex-column width-16-rem">
+                                    <div class="card-img-top position-relative ">
+                                        <div
+                                            class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                            <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                                4.8
+                                            </span>
+                                            <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                                style="color: #ffd057;"></iconify-icon>
+                                        </div>
+                                        <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                            <img src="src/images/book_new.jpg" class=" object-fit-cover " alt="..."
+                                                style="margin-top: -6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                        <div class="col">
+                                            <p class="heading-3-c m-0 ">BOOK V</p>
+                                            <p class="heading-3-c m-0 ">Rp50.000</p>
+                                            <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000
+                                            </p>
+                                            <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        </div>
+                                        <div class="col-4 position-relative "><a href="#"
+                                                class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                                style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                                    icon="ph:shopping-cart-simple" width="15" height="15"
+                                                    color=""></iconify-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card p-2 flex-column width-16-rem">
+                                    <div class="card-img-top position-relative ">
+                                        <div
+                                            class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                            <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                                4.8
+                                            </span>
+                                            <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                                style="color: #ffd057;"></iconify-icon>
+                                        </div>
+                                        <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                            <img src="src/images/book_new.jpg" class=" object-fit-cover " alt="..."
+                                                style="margin-top: -6rem;">
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                        <div class="col">
+                                            <p class="heading-3-c m-0 ">BOOK VI</p>
+                                            <p class="heading-3-c m-0 ">Rp50.000</p>
+                                            <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000
+                                            </p>
+                                            <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        </div>
+                                        <div class="col-4 position-relative "><a href="#"
+                                                class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                                style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                                    icon="ph:shopping-cart-simple" width="15" height="15"
+                                                    color=""></iconify-icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <!-- ESQ book -->
+            <p class="display-2-c text-center   ">ESQ BOOK</p>
+            <div class="container">
+                <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 pb-3">
+                    <div class="col ">
+                        <div class="m-auto card p-2 width-16-rem">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                    <div class="col">
+                                        <p class="heading-3-c m-0 ">BOOK VI</p>
+                                        <p class="heading-3-c m-0 ">Rp50.000</p>
+                                        <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                    </div>
+                                    <div class="col-4 position-relative "><a href="#"
+                                            class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                            style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                                icon="ph:shopping-cart-simple" width="15" height="15"
+                                                color=""></iconify-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="m-auto card p-2" style="width: 16rem;">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                <div class="col">
+                                    <p class="heading-3-c m-0 ">BOOK VI</p>
+                                    <p class="heading-3-c m-0 ">Rp50.000</p>
+                                    <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                    <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                </div>
+                                <div class="col-4 position-relative "><a href="#"
+                                        class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="m-auto card p-2" style="width: 16rem;">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                <div class="col">
+                                    <p class="heading-3-c m-0 ">BOOK VI</p>
+                                    <p class="heading-3-c m-0 ">Rp50.000</p>
+                                    <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                    <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                </div>
+                                <div class="col-4 position-relative "><a href="#"
+                                        class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="m-auto card p-2" style="width: 16rem;">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                <div class="col">
+                                    <p class="heading-3-c m-0 ">BOOK VI</p>
+                                    <p class="heading-3-c m-0 ">Rp50.000</p>
+                                    <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                    <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                </div>
+                                <div class="col-4 position-relative "><a href="#"
+                                        class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="m-auto card p-2" style="width: 16rem;">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                <div class="col">
+                                    <p class="heading-3-c m-0 ">BOOK VI</p>
+                                    <p class="heading-3-c m-0 ">Rp50.000</p>
+                                    <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                    <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                </div>
+                                <div class="col-4 position-relative "><a href="#"
+                                        class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="m-auto card p-2" style="width: 16rem;">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                <div class="col">
+                                    <p class="heading-3-c m-0 ">BOOK VI</p>
+                                    <p class="heading-3-c m-0 ">Rp50.000</p>
+                                    <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                    <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                </div>
+                                <div class="col-4 position-relative "><a href="#"
+                                        class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="m-auto card p-2" style="width: 16rem;">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                <div class="col">
+                                    <p class="heading-3-c m-0 ">BOOK VI</p>
+                                    <p class="heading-3-c m-0 ">Rp50.000</p>
+                                    <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                    <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                </div>
+                                <div class="col-4 position-relative "><a href="#"
+                                        class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="m-auto card p-2" style="width: 16rem;">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                            </div>
+                            <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                <div class="col">
+                                    <p class="heading-3-c m-0 ">BOOK VI</p>
+                                    <p class="heading-3-c m-0 ">Rp50.000</p>
+                                    <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                    <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                </div>
+                                <div class="col-4 position-relative "><a href="#"
+                                        class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="m-auto card p-2" style="width: 16rem;">
+                            <div class="card-img-top position-relative ">
+                                <div
+                                    class="rounded-4  px-2 position-absolute bg-white top-0 start-0 mt-2 ms-2 pb- row  ">
+                                    <span class="body-text-medium-c col p-0 pe-1 mb-1 mt-1">
+                                        4.8
+                                    </span>
+                                    <iconify-icon class="col p-0 d-flex align-self-center " icon="ph:star-fill"
+                                        style="color: #ffd057;"></iconify-icon>
+                                </div>
+                                <div class="overflow-hidden card-img-top rounded-3" style="height: 200px;">
+                                    <img src="src/images/book_new.jpg" class=" object-fit-cover w-100" alt="..."
+                                        style="margin-top: -6rem;">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 ">
+                                    <div class="col">
+                                        <p class="heading-3-c m-0 ">BOOK VI</p>
+                                        <p class="heading-3-c m-0 ">Rp50.000</p>
+                                        <p class="body-text-large-c m-0 text-decoration-line-through grey">Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                    </div>
+                                    <div class="col-4 position-relative "><a href="#"
+                                            class="btn rounded-5 position-absolute bottom-0 ps-4 pe-4 me-2  "
+                                            style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                                icon="ph:shopping-cart-simple" width="15" height="15"
+                                                color=""></iconify-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid text-white pb-3  " style="background: #1E3A8A;">
+        <div class="container-lg">
+            <div class="row pt-5  row-cols-1 row-cols-md-3">
+                <div class="col py-4  ">
+                    <div class="row row-cols-1 g-3  ">
+                        <span class="col body-text-large-c">Get In Touch</span>
+                        <div class="col ms-3 d-flex align-items-center">
+                            <iconify-icon icon="material-symbols:add-call-outline" style="color: #8996a0;" width="15"
+                                height="15"></iconify-icon>
+                            <span class="body-text-medium-c ps-1 grey">
+
+                                0812 123 4567 890 (name)</span>
+                        </div>
+
+                        <div class="col ms-3 d-flex align-items-center">
+                            <iconify-icon icon="ic:outline-whatsapp" style="color: #8996a0;" width="15"
+                                height="15"></iconify-icon>
+                            <span class=" ms-1  body-text-medium-c grey">
+                                0812 123 4567 890 (name)</span>
+                        </div>
+                        <div class="col ms-3 d-flex align-items-center">
+                            <iconify-icon icon="ic:outline-email" style="color: #8996a0;" width="15"
+                                height="15"></iconify-icon>
+                            <span class="ms-1  body-text-medium-c grey">
+                                lorem ipsum@gmail.com</span>
+                        </div>
+
+                        <span class="col ms-3 mt-5 body-text-medium-c grey">
+                            © Gerai ESQ</span>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="text-center"><img class="" src="src/images/logo_gerai_esq.png" alt="404" width="230px">
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="row row-cols-1 text-md-end pt-3 g-3">
+                        <span class="col body-text-large-c">Lets Meet</span>
+                        <span class="col body-text-medium-c grey">Jl. Graha Elnusa, RT.3/RW.3</span>
+                        <span class="col body-text-medium-c grey">
+                            Cilandak Tim, Kota Jakarta Selatan,</span>
+                        <span class="col body-text-medium-c grey">
+                            Daerah Khusus Ibukota Jakarta 12560</span>
+                        <span class="col mt-5 body-text-medium-c  grey">
+                            Website Design featured by DKIVISION</span>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

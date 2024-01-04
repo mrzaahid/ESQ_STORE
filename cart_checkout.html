@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Checkout</title>
+    <!-- bootstrap 5 -->
+    <link href="lib\bootstrap\dist\bootstrap.min.css" rel="stylesheet">
+    <script src="lib\bootstrap\dist\bootstrap.bundle.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="lib\owlcarousel\dist\owl.carousel.min.css">
+    <link rel="stylesheet" href="lib\owlcarousel\dist\owl.theme.min.css">
+    <!-- js -->
+    <script src="lib\jquery\dist\jquery.min.js"></script>
+    <script src="lib\owlcarousel\dist\owl.js"></script>
+    <script src="lib\owlcarousel\dist\owl.carousel2.thumbs.min.js"></script>
+    <!-- internal css -->
+    <link rel="stylesheet" href="mycss.css">
+    <!-- internal js -->
+    <script src="myjs.js"></script>
+
+
+</head>
+
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar bg-light" aria-label="Ninth navbar example">
+            <div class="container-xl " style="font-family: 'Inter';">
+                <a class="navbar-brand" href="#"><img class="height-55-px" src="src/images/logo_gerai_esq.png"></a>
+                <span class="fs-3 fw-bold ">Gerai ESQ</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarsExample07XL">
+                    <ul class="navbar-nav ms-auto  me-2 mb-2 mb-lg-0 p-4 ">
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link active" aria-current="page" href="#">Catalog</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item pe-4 ">
+                            <a class="nav-link " href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item ">
+                            <button class="btn btn-primary body-text-medium-c text-white mt-1 ">Sign Up</button>
+                        </li>
+                    </ul>
+
+                </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="container pt-5 px-lg-5 mb-4">
+            <a href="#">
+                <iconify-icon class="size-35-px" icon="ph:arrow-left-bold" style="color: #17183b;"></iconify-icon></a>
+            <div class="row pt-4">
+                <div class="col-12 col-lg-8 d-flex justify-content-center row  p-0 m-0">
+                    <div class="bg-white col-12 col-md-10 p-3 mb-4 mb-lg-auto ">
+                        <div class="form-check select-all">
+                            <input class="form-check-input" type="checkbox" value="" id="all" checked>
+                            <label class="form-check-label" for="all">
+                                Pilih Semua
+                            </label>
+                        </div>
+
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="1" checked>
+                            <label class="form-check-label pb-4 border-bottom" for="1">
+                                <div class="row w-100 ">
+                                    <div class="col-3 p-2 rounded-3 border border-primary ms-3">
+                                        <img class="object-fit-cover w-100 " src="src/images/hamba_cahaya_croped.png"
+                                            alt="">
+                                    </div>
+                                    <div class="col-8 px-0 d-flex flex-column justify-content-between">
+                                        <span class="fs-4 ps-3 text-capitalize fw-bold  pt-1 pb-0">Buku Hamba
+                                            Cahaya</span>
+                                        <div class="bottom-0 d-flex justify-content-between ps-2 ">
+                                            <div class="ps-1 d-flex">
+                                                <span class="grey">Jumlah : </span>
+                                                <button class="btn btn-primary lh-1 p-1 ms-2" id="minus-btn">
+                                                    <iconify-icon class="p-0 " height="14" width="14"
+                                                        icon="charm:minus">
+                                                    </iconify-icon>
+                                                </button>
+                                                <span class="text-poppins px-2 fs-4 lh-1" id="count">1</span>
+                                                <button class="btn btn-primary lh-1 p-1" id="plus-btn">
+                                                    <iconify-icon class="p-0" height="14" width="14"
+                                                        icon="gravity-ui:plus">
+                                                    </iconify-icon>
+                                                </button>
+
+
+
+                                            </div>
+                                            <span>Rp.250.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="2" checked>
+                            <label class="form-check-label pb-4 border-bottom" for="2">
+                                <div class="row w-100 ">
+                                    <div class="col-3 p-2 rounded-3 border border-primary ms-3">
+                                        <img class="object-fit-cover w-100 "
+                                            src="src/images/tshirt-amazing-you-front.png" alt="">
+                                    </div>
+                                    <div class="col-8 px-0 d-flex flex-column justify-content-between">
+                                        <span class="fs-4 ps-3 text-capitalize fw-bold  pt-1 pb-0">Merch T-Shirt Amazing
+                                            You</span>
+                                        <div class="bottom-0  ps-2 ">
+                                            <span class="ps-1"> Size : M</span>
+                                            <div class=" d-flex justify-content-between">
+                                                <div class="ps-1 d-flex">
+                                                    <span class="grey">Jumlah : </span>
+                                                    <button class="btn btn-primary lh-1 p-1 ms-2">
+                                                        <iconify-icon class="p-0 " height="14" width="14"
+                                                            icon="charm:minus">
+                                                        </iconify-icon>
+                                                    </button>
+                                                    <span class="text-poppins px-2 fs-4 lh-1">1</span>
+                                                    <button class="btn btn-primary lh-1 p-1">
+                                                        <iconify-icon class="p-0" height="14" width="14"
+                                                            icon="gravity-ui:plus">
+                                                        </iconify-icon>
+                                                    </button>
+
+
+
+                                                </div>
+                                                <span>Rp.50.000</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="3" checked>
+                            <label class="form-check-label pb-4 border-bottom" for="3">
+                                <div class="row w-100 ">
+                                    <div class="col-3 p-2 rounded-3 border border-primary ms-3">
+                                        <img class="object-fit-cover w-100 " src="src/images/hamba_cahaya_croped.png"
+                                            alt="">
+                                    </div>
+                                    <div class="col-8 px-0 d-flex flex-column justify-content-between">
+                                        <span class="fs-4 ps-3 text-capitalize fw-bold  pt-1 pb-0">Buku Hamba
+                                            Cahaya</span>
+                                        <div class="bottom-0 d-flex justify-content-between ps-2 ">
+                                            <div class="ps-1 d-flex">
+                                                <span class="grey">Jumlah : </span>
+                                                <button class="btn btn-primary lh-1 p-1 ms-2">
+                                                    <iconify-icon class="p-0 " height="14" width="14"
+                                                        icon="charm:minus">
+                                                    </iconify-icon>
+                                                </button>
+                                                <span class="text-poppins px-2 fs-4 lh-1">1</span>
+                                                <button class="btn btn-primary lh-1 p-1">
+                                                    <iconify-icon class="p-0" height="14" width="14"
+                                                        icon="gravity-ui:plus">
+                                                    </iconify-icon>
+                                                </button>
+
+
+
+                                            </div>
+                                            <span>Rp.250.000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="4" checked>
+                            <label class="form-check-label pb-4 border-bottom" for="4">
+                                <div class="row w-100 ">
+                                    <div class="col-3 p-2 rounded-3 border border-primary ms-3">
+                                        <img class="object-fit-cover w-100 "
+                                            src="src/images/tshirt-amazing-you-front.png" alt="">
+                                    </div>
+                                    <div class="col-8 px-0 d-flex flex-column justify-content-between">
+                                        <span class="fs-4 ps-3 text-capitalize fw-bold  pt-1 pb-0">Merch T-Shirt Amazing
+                                            You</span>
+                                        <div class="bottom-0  ps-2 ">
+                                            <span class="ps-1"> Size : M</span>
+                                            <div class=" d-flex justify-content-between">
+                                                <div class="ps-1 d-flex">
+                                                    <span class="grey">Jumlah : </span>
+                                                    <button class="btn btn-primary lh-1 p-1 ms-2">
+                                                        <iconify-icon class="p-0 " height="14" width="14"
+                                                            icon="charm:minus">
+                                                        </iconify-icon>
+                                                    </button>
+                                                    <span class="text-poppins px-2 fs-4 lh-1">1</span>
+                                                    <button class="btn btn-primary lh-1 p-1">
+                                                        <iconify-icon class="p-0" height="14" width="14"
+                                                            icon="gravity-ui:plus">
+                                                        </iconify-icon>
+                                                    </button>
+
+
+
+                                                </div>
+                                                <span>Rp.50.000</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <p class="text-coolgrey ps-3 pt-2 mb-1">
+                            Cart feels empty? <span class="text-black fw-bold "> Shop More</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4  p-0 ">
+
+                    <div class="bg-white w-100 d-flex justify-content-between  p-4 pb-2">
+                        <div class="text-coolgrey ">
+                            <p>Total Biaya :</p>
+                            <p>Biaya Pengiriman :</p>
+                            <p>Biaya Penanganan :</p>
+                        </div>
+                        <div class="text-end fw-bold ">
+                            <p>Rp.500.000</p>
+                            <p>Rp.15.000</p>
+                            <p>Rp.3.000</p>
+                        </div>
+                    </div>
+                    <div class="mt-3 p-4 bg-white d-flex justify-content-between fw-bold pb-2 mb-4 ">
+                        <p>Total : </p>
+                        <p>Rp.518.000</p>
+                    </div>
+                    <p class="fw-bold">Gunakan Voucher</p>
+                    <div class="input-group mb-4 voucher-checkout">
+                        <span class="input-group-text" id="basic-addon2">
+                            <iconify-icon icon="iconamoon:discount-thin" style="color: #7f7f7f;" width="20"
+                                height="20"></iconify-icon>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Masukkan Kode Voucher"
+                            aria-label="Kode Kupon" aria-describedby="basic-addon2">
+
+                    </div>
+                    <p class="fw-bold">Methode Pembayaran</p>
+                    <div class="mt-3 p-4 bg-white  mb-4 ">
+                        <div class=" row px-3 ">
+                            <div class="form-check col-6 pe-0  d-flex align-items-center ">
+                                <input class="form-check-input " type="radio" name="flexRadioDisabled"
+                                    id="flexRadioDisabled">
+                                <label class="form-check-label" for="flexRadioDisabled">
+                                    <div class="ps-1 ps-md-3 ">
+                                        <svg class="w-50" viewBox="0 0 31 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="CARD ICON">
+                                                <g id="Group">
+                                                    <path id="Vector"
+                                                        d="M24.7811 4.49744C24.7811 4.41084 24.8164 4.32624 24.8816 4.26268C24.9471 4.19888 25.0374 4.16175 25.1331 4.16175H27.693C27.7887 4.16175 27.879 4.19888 27.9445 4.26268L28.1434 4.05854L27.9445 4.26268C28.0097 4.32624 28.045 4.41084 28.045 4.49744V5.74475C28.045 5.83135 28.0097 5.91595 27.9445 5.97951C27.879 6.04331 27.7887 6.08044 27.693 6.08044H25.1331C25.0374 6.08044 24.9471 6.04331 24.8816 5.97951C24.8164 5.91595 24.7811 5.83135 24.7811 5.74475V4.49744Z"
+                                                        fill="black" stroke="#2B2B2B" stroke-width="0.575942" />
+                                                    <path id="Vector_2"
+                                                        d="M29.6128 9.151H29.9008V8.86303V2.62646C29.9008 2.21685 29.7337 1.82556 29.4389 1.53824C29.1444 1.25117 28.7464 1.09118 28.3329 1.09118H12.9739C12.5604 1.09118 12.1624 1.25117 11.8679 1.53824C11.5731 1.82556 11.406 2.21685 11.406 2.62646V8.86303V9.151H11.694H29.6128ZM11.694 11.0697H11.406V11.3577V12.605C11.406 13.0146 11.5731 13.4059 11.8679 13.6932C12.1624 13.9803 12.5604 14.1402 12.9739 14.1402H28.3329C28.7464 14.1402 29.1444 13.9803 29.4389 13.6932C29.7337 13.4059 29.9008 13.0146 29.9008 12.605V11.3577V11.0697H29.6128H11.694ZM11.3648 1.06873C11.7903 0.654051 12.369 0.419807 12.9739 0.419807H28.3329C28.9378 0.419807 29.5165 0.654051 29.942 1.06873C30.3673 1.48317 30.6048 2.04365 30.6048 2.62646V12.605C30.6048 13.1878 30.3673 13.7483 29.942 14.1627C29.5165 14.5774 28.9378 14.8116 28.3329 14.8116H12.9739C12.369 14.8116 11.7903 14.5774 11.3648 14.1627C10.9395 13.7483 10.702 13.1878 10.702 12.605V2.62646C10.702 2.04365 10.9395 1.48317 11.3648 1.06873Z"
+                                                        fill="black" stroke="#2B2B2B" stroke-width="0.575942" />
+                                                </g>
+                                                <g id="Group_2">
+                                                    <path id="Vector_3"
+                                                        d="M0.462776 9.83325C0.462776 9.25044 0.700278 8.68995 1.12555 8.27552C1.55107 7.86084 2.12974 7.62659 2.73464 7.62659H18.0936C18.6985 7.62659 19.2772 7.86084 19.7027 8.27552C20.128 8.68995 20.3655 9.25044 20.3655 9.83325V15.7818H0.462776V9.83325ZM14.8939 10.7926C14.6501 10.7926 14.4149 10.8869 14.2403 11.057C14.0655 11.2273 13.9659 11.46 13.9659 11.7042V12.9515C13.9659 13.1957 14.0655 13.4284 14.2403 13.5988C14.4149 13.7689 14.6501 13.8632 14.8939 13.8632H17.4537C17.6974 13.8632 17.9326 13.7689 18.1072 13.5988C18.282 13.4284 18.3816 13.1957 18.3816 12.9515V11.7042C18.3816 11.46 18.282 11.2273 18.1072 11.057C17.9326 10.8869 17.6974 10.7926 17.4537 10.7926H14.8939ZM0.462776 19.8117V18.8524H20.3655V19.8117C20.3655 20.3946 20.128 20.955 19.7027 21.3695C19.2772 21.7842 18.6985 22.0184 18.0936 22.0184H2.73464C2.12974 22.0184 1.55107 21.7842 1.12555 21.3695C0.700278 20.955 0.462776 20.3946 0.462776 19.8117Z"
+                                                        fill="black" stroke="#2B2B2B" stroke-width="0.575942" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check col-6 pe-0 d-flex align-items-center ">
+                                <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                    id="flexRadioCheckedDisabled" checked>
+                                <label class="form-check-label ps-1 ps-md-4  " for="flexRadioCheckedDisabled">
+                                    <img class="object-fit-cover w-100" src="src/images/paypal-icon.png" alt="">
+                                </label>
+                            </div>
+
+                        </div>
+                        <p class="fw-bold mt-3 ">Detail Pembayaran</p>
+                        <div class="form-pembayaran">
+                            <div class="input-group flex-nowrap ">
+
+                                <input type="text"
+                                    class="form-control border-unset border-bottom ps-1 borderradius-unset"
+                                    placeholder="Nama Bank" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="input-group flex-nowrap">
+
+                                <input type="text"
+                                    class="form-control border-unset border-bottom ps-1 borderradius-unset"
+                                    placeholder="Nomer Kartu" aria-label="Username" aria-describedby="addon-wrapping">
+                                <span class="input-group-text border-unset border-bottom bg-white borderradius-unset"
+                                    id="addon-wrapping"><img class="object-fit-cover " style="height: 1em;"
+                                        src="src/images/visa-logo.png" alt=""></span>
+                            </div>
+                            <div class="d-flex justify-content-between pb-3">
+                                <div class="input-group flex-nowrap ">
+
+                                    <input type="text"
+                                        class="form-control border-unset border-bottom ps-1 borderradius-unset pe-0 me-5"
+                                        placeholder="Expiration" aria-label="Username"
+                                        aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="input-group flex-nowrap w-75">
+
+                                    <input type="text"
+                                        class="form-control borderradius-unset border-unset border-bottom ps-1"
+                                        placeholder="CVV Code" aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                            </div>
+                            <span style="font-size: 0.7rem;">Dengan mengklik *Bayar* saya setuju dengan kebijakan
+                                pelayanan</span>
+                        </div>
+
+                    </div>
+                    <button class="btn btn-dark w-100 p-4 ">Bayar Rp 518.000</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

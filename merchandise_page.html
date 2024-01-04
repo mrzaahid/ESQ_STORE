@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Layout 4 Kolom</title>
+    <!-- bootstrap 5 -->
+    <link href="lib\bootstrap\dist\bootstrap.min.css" rel="stylesheet">
+    <script src="lib\bootstrap\dist\bootstrap.bundle.min.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="lib\owlcarousel\dist\owl.carousel.min.css">
+    <link rel="stylesheet" href="lib\owlcarousel\dist\owl.theme.min.css">
+    <!-- js -->
+    <script src="lib\jquery\dist\jquery.min.js"></script>
+    <script src="lib\owlcarousel\dist\owl.js"></script>
+    <!-- internal css -->
+    <link rel="stylesheet" href="mycss.css">
+    <!-- internal js -->
+    <script src="myjs.js"></script>
+
+
+</head>
+
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar bg-white" aria-label="Ninth navbar example">
+            <div class="container-xl ">
+                <a class="navbar-brand" href="#"><img class="height-55-px" src="src/images/logo_gerai_esq.png"></a>
+                <span class="fs-3 fw-bold ">Gerai ESQ</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-4 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <div class="form-group has-search" width="800px">
+                        <div class="text-center form-control-feedback mt-1 mb-1">
+                            <iconify-icon icon="material-symbols:search" width="20" height="20"></iconify-icon>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <div class="row gx-4 px-4 mt-lg-0 mt-2 justify-content-around">
+                        <a class="nav-link active px-2  col-2 col-lg" aria-current="page" href="#">
+                            <iconify-icon icon="ph:shopping-cart-simple" width="35" height="35"></iconify-icon>
+                        </a>
+                        <a class="nav-link col-10 col-lg " href="#">
+                            <iconify-icon icon="gg:profile" width="35" height="35"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="container-fluid bg-info bg-opacity-10  ">
+            <div class="container-xl py-5">
+                <div class="owl-carousel hero-merch-carousel owl-theme">
+                    <div>
+                        <div class="row py-3 ">
+                            <div class="col-12 col-md-7  d-flex align-items-end flex-wrap align-content-center ">
+                                <p class="display-1 text-poppins fw-bold  text-color-blue"> LOREM IPSUM
+                                    IS DOLOR <br />
+                                    SIT AMMET</p>
+                            </div>
+                            <div class="col-12 col-md-5 h-100 ">
+                                <img class="w-100 pb-2 " src="src/images/tshirt-merch.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row py-3 ">
+                            <div class="col d-flex align-items-end flex-wrap align-content-center ">
+                                <p class="display-1-kentish text-poppins fw-bold  text-color-blue"> LOREM IPSUM
+                                    IS DOLOR <br />
+                                    SIT AMMET</p>
+                            </div>
+                            <div class="col h-100 ">
+                                <img class="w-100" src="src/images/tshirt-merch.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row py-3 ">
+                            <div class="col d-flex align-items-end flex-wrap align-content-center ">
+                                <p class="display-1-kentish text-poppins fw-bold  text-color-blue"> LOREM IPSUM
+                                    IS DOLOR <br />
+                                    SIT AMMET</p>
+                            </div>
+                            <div class="col h-100 ">
+                                <img class="w-100" src="src/images/tshirt-merch.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5 ">
+            <div class="container">
+                <div class="px-5 row row-cols-xl-3 row-cols-md-2 row-cols-1  gy-3">
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col pb-2">
+                        <div class="m-auto card rounded-4 p-2 p-xl-3">
+                            <div class="card-img-top position-relative ">
+
+                                <div class="overflow-hidden card-img-top rounded-3 d-flex flex-column justify-content-center pb-1  bg-info bg-opacity-10"
+                                    style="height: 300px;">
+                                    <img src="src/images/tshirt-merch.png" class=" object-fit-cover w-100" alt="...">
+                                </div>
+                                <div class="container-fluid mt-2 mb-2 row g-2 position-relative">
+                                    <div class="col">
+                                        <p class="heading-3-c fw-bold text-capitalize m-0 ">merch amazing you t shirt
+                                        </p>
+                                        <p class="heading-2-c m-0 ">Rp50.000</p>
+                                        <p class="heading-3-c m-0 " style="text-decoration: line-through; color: grey">
+                                            Rp150.000</p>
+                                        <p class="body-text-large-c m-0 ">Jakarta Selatan</p>
+                                        <div class=" row row-cols-4 gy-2 w-75 ms-0 pt-2 ">
+                                            <div class="col circle bg-blue active me-2"></div>
+                                            <div class="col circle bg-pink me-2"></div>
+                                            <div class="col circle bg-light-green  me-2"></div>
+                                            <div class="col circle bg-light-pink  me-2"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#"
+                                        class="btn rounded-5 w-25  position-absolute bottom-0 end-0 ps-2   pe-2 me-2  "
+                                        style="background-color: #E8C341;"><iconify-icon class="text-white"
+                                            icon="ph:shopping-cart-simple" width="15" height="15"
+                                            color=""></iconify-icon></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5 mb-5">
+            <div class="">
+                <div class="row rounded-4" style="background: blueviolet;">
+                    <div class="col">
+                        <p class="display-2-c mt-4 mb-4 ms-3 text-white  ">STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+                    </div>
+                    <div class="col align-self-center ">
+                        <div class="m-auto me-3">
+                            <div class="input-group input-group-sm rounded-4 overflow-hidden ">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                                <input type="text" class="form-control" placeholder="Enter your email address">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer class="container-fluid text-white pb-3  " style="background: #1E3A8A;">
+        <div class="container-lg">
+            <div class="row pt-5  row-cols-1 row-cols-md-3">
+                <div class="col py-4  ">
+                    <div class="row row-cols-1 g-3  ">
+                        <span class="col body-text-large-c">Get In Touch</span>
+                        <div class="col ms-3 d-flex align-items-center">
+                            <iconify-icon icon="material-symbols:add-call-outline" style="color: #8996a0;" width="15"
+                                height="15"></iconify-icon>
+                            <span class="body-text-medium-c ps-1 " style="color: grey;">
+
+                                0812 123 4567 890 (name)</span>
+                        </div>
+
+                        <div class="col ms-3 d-flex align-items-center">
+                            <iconify-icon icon="ic:outline-whatsapp" style="color: #8996a0;" width="15"
+                                height="15"></iconify-icon>
+                            <span class=" ms-1  body-text-medium-c " style="color: grey;">
+                                0812 123 4567 890 (name)</span>
+                        </div>
+                        <div class="col ms-3 d-flex align-items-center">
+                            <iconify-icon icon="ic:outline-email" style="color: #8996a0;" width="15"
+                                height="15"></iconify-icon>
+                            <span class="ms-1  body-text-medium-c " style="color: grey;">
+                                lorem ipsum@gmail.com</span>
+                        </div>
+
+                        <span class="col ms-3 mt-5 body-text-medium-c " style="color: grey;">
+                            © Gerai ESQ</span>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="text-center"><img class="" src="src/images/logo_gerai_esq.png" alt="404" width="230px">
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="row row-cols-1 text-md-end pt-3 g-3">
+                        <span class="col body-text-large-c">Lets Meet</span>
+                        <span class="col body-text-medium-c" style="color: grey;">Jl. Graha Elnusa, RT.3/RW.3</span>
+                        <span class="col body-text-medium-c" style="color: grey;">
+                            Cilandak Tim, Kota Jakarta Selatan,</span>
+                        <span class="col body-text-medium-c" style="color: grey;">
+                            Daerah Khusus Ibukota Jakarta 12560</span>
+                        <span class="col mt-5 body-text-medium-c " style="color: grey;">
+                            Website Design featured by DKIVISION</span>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
