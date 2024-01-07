@@ -354,7 +354,7 @@ padding-bottom: 16px;
 
 @font-face {
     font-family: kentish;
-    src: url('assets/fonts/Kentish1.ttf') format('truetype');
+    src: url('src/font/Kentish1.ttf') format('truetype');
 }
 
 
@@ -415,8 +415,8 @@ padding-bottom: 16px;
     }
 }
 .owl-carousel.hero-carousel .owl-stage-outer {
-    -webkit-mask-image: url(src/images/Intersect.png);
-    mask-image: url(src/images/Intersect.png);
+    -webkit-mask-image: url("../images/Intersect.png");
+    mask-image: url("../images/Intersect.png");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
